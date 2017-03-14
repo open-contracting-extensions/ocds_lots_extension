@@ -11,7 +11,7 @@ This means that systems which are not 'lot aware' can still understand the overa
 
 ## Related Lot
 
-The relatedLot property is available for:
+The relatedLots property is available for:
 
 * items 
 * documents
@@ -79,7 +79,7 @@ Although part of the same tender, the buyer is willing to award these different 
               "id": "71210000",
               "description": "Advisory architectural services"
             },
-            "relatedLot":["lot-1"]
+            "relatedLots":["lot-1"]
            },
            {
             "id": "0002",
@@ -89,7 +89,7 @@ Although part of the same tender, the buyer is willing to award these different 
               "id": "71220000",
               "description": "Architectural design services"
             },
-            "relatedLot":["lot-1"]
+            "relatedLots":["lot-1"]
            },
            {
             "id": "0003",
@@ -99,7 +99,7 @@ Although part of the same tender, the buyer is willing to award these different 
               "id": "71311000",
               "description": "Civil engineering consultancy services"
             },
-            "relatedLot":["lot-2"]
+            "relatedLots":["lot-2"]
            },
            {
             "id": "0004",
@@ -109,7 +109,7 @@ Although part of the same tender, the buyer is willing to award these different 
               "id": "71312000",
               "description": "Structural engineering consultancy services"
             },
-            "relatedLot":["lot-1"]
+            "relatedLots":["lot-1"]
            }
         ],
         "value": {
@@ -150,7 +150,7 @@ Although part of the same tender, the buyer is willing to award these different 
         ],
         "lotGroups":[{
             "id":"lot-group-1",
-            "relatedLot":["lot-2","lot-3"],
+            "relatedLots":["lot-2","lot-3"],
             "optionToCombine":true,
             "maximumValue":1000000
         }],

@@ -5,7 +5,7 @@ When a single tender is broken down into parts that can be bid upon, and awarded
 
 The lots extension maintains the overall structure of an OCDS release, with items, documents and milestones nested immediately within ```tender```, ```award``` and ```contract``` items, but it introduces an array of Lots in the ```tender``` section, and the ability to cross-reference a specific ```relatedLot``` for each item, and an array of ```relatedLots``` for documents, milestones and awards. 
 
-Optional ```lotDetails``` and ```lotGroups``` section allow more complex conditions around the award of lots to be expressed, such as the maximum value of group of lots. 
+Optional ```lotDetails``` and ```lotGroups``` section allow more complex conditions around the award of lots to be expressed, such as the maximum value of a group of lots. 
 
 This means that systems which are not 'lot aware' can still understand the overall value of contracting taking place, key events, and relationships between buyers and suppliers. At the same time, 'lot aware' systems can make use of the cross-referenced information to present a lot-centric view on the information to users, or to analyse contracting lot by lot. 
 

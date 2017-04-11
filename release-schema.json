@@ -4,7 +4,7 @@
       "properties": {
         "lots": {
           "title": "Lots",
-          "description": "A tender process may be divided into lots, where bidders can bid on one or more lots. Details of each lot can be provided here. Items, documents and other features can then reference the lot they are related to using relatedLot. Where no relatedLot identifier is given, the values should be interpreted as applicable to the whole tender. Properties of tender can be overridden for a given Lot through their inclusion in the Lot object.",
+          "description": "A tender process may be divided into lots, where bidders can bid on one or more lots. Details of each lot can be provided here. Items, documents and other features can then reference the lot they are related to using relatedLot. Where no relatedLots identifier is given, the values should be interpreted as applicable to the whole tender. Properties of tender can be overridden for a given Lot through their inclusion in the Lot object.",
           "type": "array",
           "items": {
             "$ref": "#/definitions/Lot"
@@ -15,7 +15,7 @@
         },
         "lotGroups": {
           "title": "Lot groups",
-          "description": "ere the buyer reserves the right to combine lots, or wishes to specify the total value for a group of lots, a lot group is used to capture this information.",
+          "description": "Where the buyer reserves the right to combine lots, or wishes to specify the total value for a group of lots, a lot group is used to capture this information.",
           "type":"array",
           "items":{
             "$ref": "#/definitions/LotGroup"
@@ -42,18 +42,13 @@
     },
     "Item": {
       "properties": {
-        "relatedLots": {
-          "title": "Related lot(s)",
-          "description": "If this item belongs to a lot, provide the identifier(s) of the related lot(s) here.",
+        "relatedLot": {
+          "title": "Related lot",
+          "description": "If this item belongs to a lot, provide the identifier of the related lot here. Each item may only belong to a single lot.",
           "type": [
-            "array"
-          ],
-          "items": {
-            "type": [
-              "string",
-              "null"
-            ]
-          }
+            "string",
+            "null"
+          ]
         }
       }
     },
@@ -117,7 +112,7 @@
         "id": {
           "title": "Lot ID",
           "type": "string",
-          "description": "A local identifier for this lot, such as a lot number. This is used in relatedLot references at the item, document and award level."
+          "description": "A local identifier for this lot, such as a lot number. This is used in relatedLots references at the item, document and award level."
         },
         "title": {
           "title": "Title",

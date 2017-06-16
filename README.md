@@ -51,6 +51,7 @@ Although part of the same tender, the buyer is willing to award these different 
   },
   "license": "http://opendatacommons.org/licenses/pddl/1.0/",
   "publicationPolicy": "https://github.com/open-contracting/sample-data/",
+  "uri": "https://github.com/open-contracting/ocds_lots_extension/blob/master/examples/lots.json",
   "releases": [
     {
       "language": "en",

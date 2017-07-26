@@ -100,7 +100,7 @@
               "null"
             ]
           },
-          "NOTE": "Compare againt lotValues approach in open procument API - http://api-docs.openprocurement.org/en/latest/lots.html"
+          "NOTE": "Compare against lotValues approach in open procurement API - http://api-docs.openprocurement.org/en/latest/lots.html"
         }
       }
     },
@@ -149,7 +149,7 @@
     },
     "LotDetails": {
       "title": "Lot Details",
-      "description": "If this tender is divided into lots, details can be provided here of any criteria that apply to bidding on these lots. This extended property is currently focussed on fields required by the EU TED data standard",
+      "description": "If this tender is divided into lots, details can be provided here of any criteria that apply to bidding on these lots. This extended property is currently focused on fields required by the EU TED data standard",
       "type": [
         "object",
         "null"

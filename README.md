@@ -1,5 +1,4 @@
-Lots
-====
+# Lots
 
 When a single tender is broken down into parts that can be bid upon, and awarded, separately, this is modelled using the **lots extension**.
 

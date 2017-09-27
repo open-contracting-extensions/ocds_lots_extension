@@ -177,3 +177,7 @@ Although part of the same tender, the buyer is willing to award these different 
     :extension: lots
     :definitions: Lots
 ```
+
+## Issues
+
+Report issues for this extension in the [ocds-extensions repository](https://github.com/open-contracting/ocds-extensions/issues), putting the extension's name in the issue's title.

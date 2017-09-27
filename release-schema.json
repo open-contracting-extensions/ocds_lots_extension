@@ -99,8 +99,7 @@
               "string",
               "null"
             ]
-          },
-          "NOTE": "Compare against lotValues approach in open procurement API - http://api-docs.openprocurement.org/en/latest/lots.html"
+          }
         }
       }
     },

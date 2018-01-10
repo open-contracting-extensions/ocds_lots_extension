@@ -9,7 +9,9 @@
   "license": "http://opendatacommons.org/licenses/pddl/1.0/",
   "publicationPolicy": "https://github.com/open-contracting/sample-data/",
   "uri": "https://github.com/open-contracting/ocds_lots_extension/blob/master/examples/lots.json",
-  "extensions":["https://raw.githubusercontent.com/open-contracting/ocds_lots_extension/v1.1/extension.json"],
+  "extensions": [
+    "https://raw.githubusercontent.com/open-contracting/ocds_lots_extension/v1.1/extension.json"
+  ],
   "version": "1.1",
   "releases": [
     {
@@ -22,8 +24,8 @@
       ],
       "initiationType": "tender",
       "buyer": {
-          "id": "ZZ-MISC-anytown",
-          "name": "AnyTown Council "
+        "id": "ZZ-MISC-anytown",
+        "name": "AnyTown Council "
       },
       "tender": {
         "id": "ocds-213czf-lots-00001-01-tender",
@@ -40,9 +42,9 @@
               "id": "71210000",
               "description": "Advisory architectural services"
             },
-            "relatedLot":"lot-1"
-           },
-           {
+            "relatedLot": "lot-1"
+          },
+          {
             "id": "0002",
             "description": "Architectural design",
             "classification": {
@@ -50,9 +52,9 @@
               "id": "71220000",
               "description": "Architectural design services"
             },
-            "relatedLot":"lot-1"
-           },
-           {
+            "relatedLot": "lot-1"
+          },
+          {
             "id": "0003",
             "description": "Civil engineering consultant",
             "classification": {
@@ -60,9 +62,9 @@
               "id": "71311000",
               "description": "Civil engineering consultancy services"
             },
-            "relatedLot":"lot-2"
-           },
-           {
+            "relatedLot": "lot-2"
+          },
+          {
             "id": "0004",
             "description": "Structural engineering services",
             "classification": {
@@ -70,57 +72,62 @@
               "id": "71312000",
               "description": "Structural engineering consultancy services"
             },
-            "relatedLot":"lot-1"
-           }
+            "relatedLot": "lot-1"
+          }
         ],
         "value": {
           "amount": 1200000,
           "currency": "GBP"
         },
-        "lots":[
-            {
-                "id":"lot-1",
-                "title":"Architectural services",
-                "description":"For architectural services delivered in the project",
-                "status":"active",
-                "value":{
-                    "currency":"GBP",
-                    "amount":200000
-                }
-            },
-            {
-                "id":"lot-2",
-                "title":"Civil engineering services",
-                "description":"For civil engineering services delivered in the project",
-                "status":"active",
-                "value":{
-                    "currency":"GBP",
-                    "amount":600000
-                }
+        "lots": [
+          {
+            "id": "lot-1",
+            "title": "Architectural services",
+            "description": "For architectural services delivered in the project",
+            "status": "active",
+            "value": {
+              "currency": "GBP",
+              "amount": 200000
             }
-            ,{
-                "id":"lot-3",
-                "title":"Structural engineering",
-                "description":"For structural engineering consultancy delivered in the project",
-                "status":"active",
-                "value":{
-                    "currency":"GBP",
-                    "amount":600000
-                }
+          },
+          {
+            "id": "lot-2",
+            "title": "Civil engineering services",
+            "description": "For civil engineering services delivered in the project",
+            "status": "active",
+            "value": {
+              "currency": "GBP",
+              "amount": 600000
             }
+          },
+          {
+            "id": "lot-3",
+            "title": "Structural engineering",
+            "description": "For structural engineering consultancy delivered in the project",
+            "status": "active",
+            "value": {
+              "currency": "GBP",
+              "amount": 600000
+            }
+          }
         ],
-        "lotGroups":[{
-            "id":"lot-group-1",
-            "relatedLots":["lot-2","lot-3"],
-            "optionToCombine":true,
-            "maximumValue":{
-              "currency":"GBP",
-              "amount":1000000
+        "lotGroups": [
+          {
+            "id": "lot-group-1",
+            "relatedLots": [
+              "lot-2",
+              "lot-3"
+            ],
+            "optionToCombine": true,
+            "maximumValue": {
+              "currency": "GBP",
+              "amount": 1000000
             }
-        }],
-        "lotDetails":{
-            "maximumLotsBidPerSupplier":4,
-            "maximumLotsAwardedPerSupplier":2
+          }
+        ],
+        "lotDetails": {
+          "maximumLotsBidPerSupplier": 4,
+          "maximumLotsAwardedPerSupplier": 2
         }
       }
     }

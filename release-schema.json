@@ -29,12 +29,12 @@
           "title": "Related lot(s)",
           "description": "If this document relates to a particular lot, provide the identifier(s) of the related lot(s) here.",
           "type": [
-            "array"
+            "array",
+            "null"
           ],
           "items": {
             "type": [
-              "string",
-              "null"
+              "string"
             ]
           }
         }
@@ -58,12 +58,12 @@
           "title": "Related lot(s)",
           "description": "If this milestone relates to a particular lot, provide the identifier(s) of the related lot(s) here.",
           "type": [
-            "array"
+            "array",
+            "null"
           ],
           "items": {
             "type": [
-              "string",
-              "null"
+              "string"
             ]
           }
         }
@@ -75,12 +75,12 @@
           "title": "Related lot(s)",
           "description": "If this award relates to one or more specific lots, provide the identifier(s) of the related lot(s) here.",
           "type": [
-            "array"
+            "array",
+            "null"
           ],
           "items": {
             "type": [
-              "string",
-              "null"
+              "string"
             ]
           }
         }
@@ -92,12 +92,12 @@
           "title": "Related lot(s)",
           "description": "If this bid relates to one or more specific lots, provide the identifier(s) of the related lot(s) here.",
           "type": [
-            "array"
+            "array",
+            "null"
           ],
           "items": {
             "type": [
-              "string",
-              "null"
+              "string"
             ]
           }
         }
@@ -196,12 +196,12 @@
           "title": "Related lot(s)",
           "description": "A list of the identifiers of the lots that form this group. Lots may appear in more than one group.",
           "type": [
-            "array"
+            "array",
+            "null"
           ],
           "items": {
             "type": [
-              "string",
-              "null"
+              "string"
             ]
           }
         },

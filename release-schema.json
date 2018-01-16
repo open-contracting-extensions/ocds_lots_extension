@@ -11,6 +11,8 @@
           }
         },
         "lotDetails": {
+          "title": "Lot Details",
+          "description": "If this tender is divided into lots, details can be provided here of any criteria that apply to bidding on these lots. This extended property is currently focused on fields required by the EU TED data standard",
           "$ref": "#/definitions/LotDetails"
         },
         "lotGroups": {

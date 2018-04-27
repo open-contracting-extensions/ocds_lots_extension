@@ -178,6 +178,14 @@ Although part of the same tender, the buyer is willing to award these different 
     :definitions: Lot LotDetails LotGroup
 ```
 
+The extension adds fields to existing objects:
+
+```eval_rst
+.. extensiontable::
+    :extension: lots
+    :definitions: Tender Bid Award Document Item Milestone
+```
+
 ## Issues
 
 Report issues for this extension in the [ocds-extensions repository](https://github.com/open-contracting/ocds-extensions/issues), putting the extension's name in the issue's title.

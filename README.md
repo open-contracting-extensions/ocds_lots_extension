@@ -192,6 +192,10 @@ Report issues for this extension in the [ocds-extensions repository](https://git
 
 ## Changelog
 
+### v1.1.4
+
+* `Tender.lotDetails` no longer uses a `$ref` to a `LotDetails` definition
+
 ### v1.1.3
 
 * Disallow `relatedLots` fields from having null in their arrays of strings

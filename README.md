@@ -151,6 +151,8 @@ Report issues for this extension in the [ocds-extensions repository](https://git
 ### v1.1.4
 
 * `Tender.lotDetails` no longer uses a `$ref` to a `LotDetails` definition
+* Remove Sphinx directives from readme
+* Update extension.json for Extension Explorer
 
 ### v1.1.3
 

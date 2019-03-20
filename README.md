@@ -150,6 +150,7 @@ Report issues for this extension in the [ocds-extensions repository](https://git
 
 ### v1.1.4
 
+* Disallow `Tender.lotDetails` from being null (bug introduced in first release)
 * `Tender.lotDetails` no longer uses a `$ref` to a `LotDetails` definition
 * Remove Sphinx directives from readme
 * Update extension.json for Extension Explorer

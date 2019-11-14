@@ -2,7 +2,7 @@
 
 When a single tender is broken down into parts that can be bid upon, and awarded, separately, this is modelled using the **lots extension**.
 
-The lots extension maintains the overall structure of an OCDS release, with items, documents and milestones nested immediately within `tender`, `award` and `contract` items, but it introduces an array of Lots in the `tender` section, and the ability to cross-reference a specific `relatedLot` for each item, and an array of `relatedLots` for documents, milestones and awards.
+The lots extension maintains the overall structure of an OCDS release, with items, documents and milestones nested immediately within `tender`, `awards` and `contracts` sections, but it introduces an array of Lots in the `tender` section, and the ability to cross-reference a specific `relatedLot` for each item, and an array of `relatedLots` for documents, milestones and awards.
 
 Optional `lotDetails` and `lotGroups` section allow more complex conditions around the award of lots to be expressed, such as the maximum value of a group of lots.
 

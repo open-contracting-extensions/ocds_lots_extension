@@ -28,6 +28,14 @@ The items within an award should each have a `relatedLot` property, but publishe
 
 Where the bid extension is also in use, each bid can also declare its related lots.
 
+## Lot Status and Tender Status
+
+The core OCDS field `tender.status` is meant to represent the status of the tendering procedure as a whole.
+As such, if **at least one lot** is awarded or successful, the `tender.status` will be 'complete'.
+Otherwise, if **all** lots are unsuccessful, it is 'unsuccessful'. Finally, if all lots are cancelled,
+the `tender.status` is 'cancelled'.
+Prior to there being a result for all lots, 'planning', 'planned' and 'active' codes are used as usual.
+
 ## Worked example
 
 A tender is issued for consultancy in the development of a new public building. This might include items for:

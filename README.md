@@ -28,7 +28,7 @@ The items within an award should each have a `relatedLot` property, but publishe
 
 Where the bid extension is also in use, each bid can also declare its related lots.
 
-## Worked example
+## Example
 
 A tender is issued for consultancy in the development of a new public building. This might include items for:
 

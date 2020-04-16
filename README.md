@@ -37,7 +37,7 @@ Where the bid extension is also in use, each bid can also declare its related lo
   * Otherwise, if at least one lot's status is 'unsuccessful', then `tender.status` should be 'unsuccessful', to indicate that the procedure was completed but unsuccessfully.
   * Otherwise, If all lots' status are 'cancelled', then `tender.status` should be 'cancelled', to indicate that the procedure was discontinued as a whole.
 
-## Worked example
+## Example
 
 A tender is issued for consultancy in the development of a new public building. This might include items for:
 

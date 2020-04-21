@@ -26,7 +26,12 @@ Documents and milestones can optionally have a `relatedLots` property. Those wit
 
 The items within an award should each have a `relatedLot` property, but publishers may choose to also reference all the lots an award relates to at the award level using `relatedLots`.
 
-Where the bid extension is also in use, each bid can also declare its related lots.
+### In OCDS extensions
+
+The following objects can also declare related lots:
+
+* bids (`Bid`), in the [bid extension](https://github.com/open-contracting-extensions/ocds_bid_extension)
+* sources of finance (`Finance`), in the [finance extension](https://github.com/open-contracting-extensions/ocds_finance_extension)
 
 ## How to set `tender.status` if lots' statuses differ?
 

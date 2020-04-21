@@ -106,6 +106,10 @@ Although part of the same tender, the buyer is willing to award these different 
         "value": {
           "currency": "GBP",
           "amount": 200000
+        },
+        "contractPeriod": {
+          "startDate": "2020-10-10T00:00:00Z",
+          "endDate": "2021-11-10T00:00:00Z"
         }
       },
       {
@@ -116,6 +120,10 @@ Although part of the same tender, the buyer is willing to award these different 
         "value": {
           "currency": "GBP",
           "amount": 400000
+        },
+        "contractPeriod": {
+          "startDate": "2020-12-10T00:00:00Z",
+          "endDate": "2021-12-10T00:00:00Z"
         }
       },
       {
@@ -126,6 +134,10 @@ Although part of the same tender, the buyer is willing to award these different 
         "value": {
           "currency": "GBP",
           "amount": 600000
+        },
+        "contractPeriod": {
+          "startDate": "2021-02-10T00:00:00Z",
+          "endDate": "2022-02-10T00:00:00Z"
         }
       }
     ],
@@ -145,7 +157,8 @@ Although part of the same tender, the buyer is willing to award these different 
     ],
     "lotDetails": {
       "maximumLotsBidPerSupplier": 4,
-      "maximumLotsAwardedPerSupplier": 2
+      "maximumLotsAwardedPerSupplier": 2,
+      "awardCriteriaDetails": "Percentage of people aggregated nationwide contestants undertake to cover, as indicated in their Economic Bids. The evaluation of proposals will be conducted based on the provisions of Article Y of the law on public private partnerships, and the provisions of the tender rules, performing in a first stage an evaluation of the technical bids and subsequently an assessment of the financial offer of the participants."
     }
   }
 }

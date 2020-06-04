@@ -178,6 +178,7 @@ Report issues for this extension in the [ocds-extensions repository](https://git
 * Add `tender.lotDetails.awardCriteriaDetails` field
 * Add `Finance.relatedLots` field
 * Add `Lot.contractPeriod` field
+* Remove type information from field descriptions
 
 ### v1.1.4
 

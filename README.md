@@ -4,7 +4,7 @@ When a single tender is broken down into parts that can be bid upon, and awarded
 
 The lots extension maintains the overall structure of an OCDS release, with items, documents and milestones nested immediately within `tender`, `awards` and `contracts` sections, but it introduces an array of Lots in the `tender` section, and the ability to cross-reference a specific `relatedLot` for each item, and an array of `relatedLots` for documents, milestones and awards.
 
-Optional `lotDetails` and `lotGroups` section allow more complex conditions around the award of lots to be expressed, such as the maximum value of a group of lots.
+The `lotDetails` and `lotGroups` sections allow more complex conditions around the award of lots to be expressed, such as the maximum value of a group of lots.
 
 This means that systems which are not 'lot aware' can still understand the overall value of contracting taking place, key events, and relationships between buyers and suppliers. At the same time, 'lot aware' systems can make use of the cross-referenced information to present a lot-centric view on the information to users, or to analyze contracting lot by lot.
 
@@ -25,11 +25,11 @@ In other extensions, the following objects can also declare related lots:
 * bids submitted by tenderers (`Bid`), in the [bid extension](https://github.com/open-contracting-extensions/ocds_bid_extension)
 * sources of finance (`Finance`), in the [finance extension](https://github.com/open-contracting-extensions/ocds_finance_extension)
 
-When lots are used, **all** items should have a `relatedLot` property.
+When lots are used, **all** items should have a `relatedLot` field.
 
-Documents and milestones can optionally have a `relatedLots` property. Those without this property should be interpreted as applicable to the tender as a whole.
+Documents and milestones may have a `relatedLots` field. Those without this field ought to be interpreted as applicable to the tender as a whole.
 
-The items within an award should each have a `relatedLot` property, but publishers may choose to also reference all the lots an award relates to at the award level using `relatedLots`.
+The items within an award should have a `relatedLot` field. Publishers may also reference all the lots an award relates to at the award level using `relatedLots`.
 
 ## How to set `tender.status` if lots' statuses differ?
 

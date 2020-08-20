@@ -34,6 +34,7 @@ The items within an award should have a `relatedLot` field. Publishers may also 
 ## How to set `tender.status` if lots' statuses differ?
 
 `tender.status` and `Lot.status` use the closed tenderStatus.csv codelist. This codelist progresses from planning statuses ('planning', 'planned'), to 'active' status, and then result statuses ('complete', 'cancelled', 'unsuccessful').
+
 * If any lot's status is 'active', then `tender.status` should be 'active', to indicate that some lots are awaiting results.
 * If all lots' status are a result status, then `tender.status` describes the aggregate result:
   * If at least one lot's status is 'complete', then `tender.status` should be 'complete', to indicate that there is at least one award.

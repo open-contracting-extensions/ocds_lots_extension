@@ -10,7 +10,7 @@ This means that systems which are not 'lot aware' can still understand the overa
 
 ## Related Lot
 
-The `relatedLot` (singular) property is available for:
+The `relatedLot` (singular) field is available for:
 
 * items
 

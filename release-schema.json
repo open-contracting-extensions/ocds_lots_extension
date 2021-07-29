@@ -4,7 +4,7 @@
       "properties": {
         "lots": {
           "title": "Lots",
-          "description": "A tender process can be divided into lots, where bidders can bid on one or more lots. Details of each lot can be provided here. Items, documents and other features may then reference the lot they are related to using relatedLot. Where no relatedLots identifier is given, the values ought to be interpreted as applicable to the whole tender. Properties of tender can be overridden for a given Lot through their inclusion in the Lot object.",
+          "description": "A tender process can be divided into lots, where bidders can bid on one or more lots. Details of each lot can be provided here. Items, documents and other features may then reference the lot they are related to using relatedLot. Where no relatedLots identifier is given, the values ought to be interpreted as applicable to the whole tender. Details about the whole tender can be overridden for a given lot through their inclusion in the lot object.",
           "type": "array",
           "items": {
             "$ref": "#/definitions/Lot"

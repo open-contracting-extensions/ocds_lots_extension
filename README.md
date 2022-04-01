@@ -174,6 +174,10 @@ Report issues for this extension in the [ocds-extensions repository](https://git
 
 ## Changelog
 
+### Unreleased
+
+* Add `lot.minValue` field
+
 ### v1.1.5
 
 * Add `tender.lotDetails.awardCriteriaDetails` field

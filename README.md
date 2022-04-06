@@ -178,6 +178,7 @@ Report issues for this extension in the [ocds-extensions repository](https://git
 
 
 * Add `Lot.buyer` field
+* Add `Lot.minValue` field
 
 ### v1.1.5
 

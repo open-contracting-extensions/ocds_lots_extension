@@ -177,6 +177,7 @@ Report issues for this extension in the [ocds-extensions repository](https://git
 ### Unreleased
 
 * Add `Lot.minValue` field
+* Update field descriptions to neutral voice
 
 ### v1.1.5
 

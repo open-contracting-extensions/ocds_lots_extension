@@ -55,7 +55,7 @@
       "properties": {
         "relatedLots": {
           "title": "Related lot(s)",
-          "description": "If this document relates to a particular lot, provide the identifier(s) of the related lot(s) here.",
+          "description": "The identifiers of the lots to which this document relates.",
           "type": [
             "array",
             "null"
@@ -71,8 +71,8 @@
     "Item": {
       "properties": {
         "relatedLot": {
-          "title": "Related lot",
-          "description": "If this item belongs to a lot, provide the identifier of the related lot here.",
+          "title": "Related lot(s)",
+          "description": "The identifier of the lot to which this item relates.",
           "type": [
             "string",
             "null"
@@ -84,7 +84,7 @@
       "properties": {
         "relatedLots": {
           "title": "Related lot(s)",
-          "description": "If this milestone relates to a particular lot, provide the identifier(s) of the related lot(s) here.",
+          "description": "The identifiers of the lots to which this milestone relates.",
           "type": [
             "array",
             "null"
@@ -101,7 +101,7 @@
       "properties": {
         "relatedLots": {
           "title": "Related lot(s)",
-          "description": "If this award relates to one or more specific lots, provide the identifier(s) of the related lot(s) here.",
+          "description": "The identifiers of the lots to which this award relates.",
           "type": [
             "array",
             "null"
@@ -118,7 +118,7 @@
       "properties": {
         "relatedLots": {
           "title": "Related lot(s)",
-          "description": "If this bid relates to one or more specific lots, provide the identifier(s) of the related lot(s) here.",
+          "description": "The identifiers of the lots to which this bid relates.",
           "type": [
             "array",
             "null"
@@ -135,7 +135,7 @@
       "properties": {
         "relatedLots": {
           "title": "Related lot(s)",
-          "description": "If this source of finance relates to one or more specific lots, provide the identifier(s) of the related lot(s) here.",
+          "description": "The identifiers of the lots to which this source of finance relates.",
           "type": [
             "array",
             "null"

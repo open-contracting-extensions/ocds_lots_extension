@@ -12,7 +12,7 @@
         },
         "lotDetails": {
           "title": "Lot Details",
-          "description": "If this tender is divided into lots, details can be provided here of any criteria that apply to bidding on these lots.",
+          "description": "Details of any criteria that apply to bidding on the lots in the tender",
           "type": "object",
           "properties": {
             "maximumLotsBidPerSupplier": {

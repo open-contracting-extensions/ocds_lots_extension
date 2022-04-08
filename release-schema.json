@@ -71,7 +71,7 @@
     "Item": {
       "properties": {
         "relatedLot": {
-          "title": "Related lot(s)",
+          "title": "Related lot",
           "description": "The identifier of the lot to which this item relates.",
           "type": [
             "string",

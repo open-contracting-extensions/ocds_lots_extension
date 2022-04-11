@@ -12,7 +12,7 @@
         },
         "lotDetails": {
           "title": "Lot Details",
-          "description": "Details of any criteria that apply to bidding on the lots in the tender",
+          "description": "Details of any criteria that apply to bidding on the lots in this tender.",
           "type": "object",
           "properties": {
             "maximumLotsBidPerSupplier": {

@@ -152,6 +152,9 @@
       "title": "Lots",
       "description": "A lot is a grouping of items within a tender that can be bid on or awarded together.",
       "type": "object",
+      "required": [
+        "id"
+      ],
       "properties": {
         "id": {
           "title": "Lot ID",
@@ -215,6 +218,9 @@
       "title": "Lot group",
       "description": "Where the buyer reserves the right to combine lots, or wishes to specify the total value for a group of lots, a lot group is used to capture this information.",
       "type": "object",
+      "required": [
+        "id"
+      ],
       "properties": {
         "id": {
           "title": "Lot group identifier",

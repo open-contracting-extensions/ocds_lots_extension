@@ -177,6 +177,7 @@ Report issues for this extension in the [ocds-extensions repository](https://git
 ### Unreleased
 
 * Add `Lot.minValue` field
+* Make `Lot.id` and `LotGroup.id` required so that Lots and LotGroups are merged by identifier
 
 ### v1.1.5
 

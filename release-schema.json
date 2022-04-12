@@ -208,6 +208,11 @@
           "title": "Contract period",
           "description": "The period over which the contract is estimated or specified to be active. If the lot does not specify explicit dates, the duration field can be used.",
           "$ref": "#/definitions/Period"
+        },
+        "buyer": {
+          "title": "Buyer",
+          "description": "The organization aiming to conclude a contract with a supplier or to use the goods, works or services in this lot. This may be different from the procuring entity who may be specified in the tender data.",
+          "$ref": "#/definitions/OrganizationReference"
         }
       }
     },

@@ -131,23 +131,6 @@
         }
       }
     },
-    "Finance": {
-      "properties": {
-        "relatedLots": {
-          "title": "Related lot(s)",
-          "description": "The identifiers of the lots to which this source of finance relates.",
-          "type": [
-            "array",
-            "null"
-          ],
-          "items": {
-            "type": [
-              "string"
-            ]
-          }
-        }
-      }
-    },
     "Lot": {
       "title": "Lots",
       "description": "A lot is a grouping of items within a tender that can be bid on or awarded together.",

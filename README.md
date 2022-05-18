@@ -176,10 +176,10 @@ Report issues for this extension in the [ocds-extensions repository](https://git
 
 ### Unreleased
 
-
 * Add `Lot.buyer` field
 * Add `Lot.minValue` field
 * Make `Lot.id` and `LotGroup.id` required so that lots and lot groups are merged by identifier
+* Move `Bid.relatedLots` to the Bid statistics and details extension
 * Move `Finance.relatedLots` to the Finance extension
 * Update field descriptions to use a neutral voice
 

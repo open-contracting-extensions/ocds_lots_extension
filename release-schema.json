@@ -114,23 +114,6 @@
         }
       }
     },
-    "Bid": {
-      "properties": {
-        "relatedLots": {
-          "title": "Related lot(s)",
-          "description": "The identifiers of the lots to which this bid relates.",
-          "type": [
-            "array",
-            "null"
-          ],
-          "items": {
-            "type": [
-              "string"
-            ]
-          }
-        }
-      }
-    },
     "Lot": {
       "title": "Lots",
       "description": "A lot is a grouping of items within a tender that can be bid on or awarded together.",

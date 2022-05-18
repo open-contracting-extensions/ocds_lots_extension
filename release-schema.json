@@ -114,23 +114,6 @@
         }
       }
     },
-    "Bid": {
-      "properties": {
-        "relatedLots": {
-          "title": "Related lot(s)",
-          "description": "The identifiers of the lots to which this bid relates.",
-          "type": [
-            "array",
-            "null"
-          ],
-          "items": {
-            "type": [
-              "string"
-            ]
-          }
-        }
-      }
-    },
     "Finance": {
       "properties": {
         "relatedLots": {

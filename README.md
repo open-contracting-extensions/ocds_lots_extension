@@ -6,7 +6,7 @@ A lot is a grouping of items within a contracting process that can be bid on or 
 
 If a contracting process is divided into lots, you should use this extension.
 
-If a contracting process is not divided into lots, you should nonetheless use this extension to create a single, virtual lot. When a data element can be mapped to either `tender` or `tender.lots`, you should map it to `tender.lots`. In this way, information is accessible at the same location for all contracting processes, regardless of whether the process is actually divided into lots.
+If a contracting process is not divided into lots, you should nonetheless use this extension to create a single, virtual lot. If a data element can be mapped to either `tender` or `tender.lots`, you should map it to `tender.lots`. In this way, information is accessible at the same location for all contracting processes, regardless of whether the process is actually divided into lots.
 
 ## Modelling
 
@@ -190,7 +190,7 @@ Report issues for this extension in the [ocds-extensions repository](https://git
 * Move `Bid.relatedLots` to the Bid statistics and details extension
 * Move `Finance.relatedLots` to the Finance extension
 * Update field descriptions to use a neutral voice
-* Add usage guidance to `README.md`
+* Add usage guidance
 
 ### v1.1.5
 

@@ -1,6 +1,14 @@
 # Lots
 
-When a single tender is broken down into parts that can be bid upon, and awarded, separately, this is modelled using the **lots extension**.
+A lot is a grouping of items within a contracting process that can be bid on or awarded together. This extension adds the concept of a lot to OCDS.
+
+## Usage
+
+If a contracting process is divided into lots, you should use this extension.
+
+If a contracting process is not divided into lots, you should nonetheless use this extension to create a single, virtual lot. When a data element can be mapped to either `tender` or `tender.lots`, you should map it to `tender.lots`. In this way, information is accessible at the same location for all contracting processes, regardless of whether the process is actually divided into lots.
+
+## Modelling
 
 The lots extension maintains the overall structure of an OCDS release, with items, documents and milestones nested immediately within `tender`, `awards` and `contracts` sections, but it introduces an array of Lots in the `tender` section, and the ability to cross-reference a specific `relatedLot` for each item, and an array of `relatedLots` for documents, milestones and awards.
 
@@ -182,6 +190,7 @@ Report issues for this extension in the [ocds-extensions repository](https://git
 * Move `Bid.relatedLots` to the Bid statistics and details extension
 * Move `Finance.relatedLots` to the Finance extension
 * Update field descriptions to use a neutral voice
+* Add usage guidance to `README.md`
 
 ### v1.1.5
 

@@ -4,9 +4,9 @@ A lot is a grouping of items within a contracting process that can be bid on or 
 
 ## Usage
 
-If a contracting process is divided into lots, you should use this extension.
+If a contracting process is divided into lots, then you should add each lot to the `tender.lots` array.
 
-If a contracting process is not divided into lots, you should nonetheless use this extension to create a single, virtual lot. If a data element can be mapped to either `tender` or `tender.lots`, you should map it to `tender.lots`. In this way, information is accessible at the same location for all contracting processes, regardless of whether the process is actually divided into lots.
+If a contracting process is not divided into lots, then you should nonetheless add a single, virtual lot. If a data element can be mapped to either a `tender` field or a `tender.lots` field, you should map it to the `tender.lots` field. In this way, information is accessible at the same location for all contracting processes, regardless of whether the process is actually divided into lots.
 
 ## Modelling
 

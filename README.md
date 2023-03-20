@@ -66,8 +66,6 @@ The items within an award should have a `relatedLot` field. Publishers may also 
 
 ## Examples
 
-### Tender
-
 A tender is issued for consultancy in the development of a new public building. This might include items for:
 
 * Architectural design

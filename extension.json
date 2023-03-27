@@ -14,6 +14,9 @@
   "schemas": [
     "release-schema.json"
   ],
+  "dependencies": [
+    "https://raw.githubusercontent.com/open-contracting-extensions/ocds_1_2_draft_extension/main/extension.json"
+  ],
   "testDependencies": [
     "https://raw.githubusercontent.com/open-contracting-extensions/ocds_bid_extension/master/extension.json",
     "https://raw.githubusercontent.com/open-contracting-extensions/ocds_finance_extension/master/extension.json"

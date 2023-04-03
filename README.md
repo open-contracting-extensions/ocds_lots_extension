@@ -7,8 +7,7 @@ A lot is a grouping of items within a contracting process that can be bid on or 
 In the European Union, this extension's fields correspond to the following [eForms business groups](https://docs.ted.europa.eu/eforms/latest/reference/business-terms/):
 
 * BG-2 (Purpose)
-* BG-9 (Change)
-* BG-101 (Procurement Documents)
+* BT-13 (Additional Information Deadline) in BG-101 (Procurement Documents)
 * BG-102 (Submission Terms)
 * BG-705 (Other Requirements)
 * BG-710 (Additional Information)

@@ -310,19 +310,19 @@ Report issues for this extension in the [ocds-extensions repository](https://git
 
 * Add fields:
   * `Amendment.relatedLots`
-  * `Lot.identifiers`
-  * `Lot.tenderPeriod`
   * `Lot.additionalClassifications`
+  * `Lot.buyer`
+  * `Lot.enquiryPeriod`
+  * `Lot.tenderPeriod`
+  * `Lot.identifiers`
   * `Lot.mainProcurementCategory`
   * `Lot.additionalProcurementCategories`
-  * `Lot.enquiryPeriod`
   * `Lot.milestones`
+  * `Lot.minValue`
   * `Lot.submissionMethodDetails`
   * `LotGroup.identifiers`
   * `LotGroup.title`
   * `LotGroup.description`
-* Add `Lot.buyer` field
-* Add `Lot.minValue` field
 * Make `Lot.id` and `LotGroup.id` required so that lots and lot groups are merged by identifier
 * Move `Bid.relatedLots` to the Bid statistics and details extension
 * Move `Finance.relatedLots` to the Finance extension

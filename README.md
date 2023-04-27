@@ -49,7 +49,7 @@ The items within an award should have a `relatedLot` field. Publishers may also 
   * Otherwise, if at least one lot's status is 'unsuccessful', then `tender.status` should be 'unsuccessful', to indicate that the procedure was completed but unsuccessfully.
   * Otherwise, If all lots' status are 'cancelled', then `tender.status` should be 'cancelled', to indicate that the procedure was discontinued as a whole.
 
-## Example
+## Examples
 
 A tender is issued for consultancy in the development of a new public building. This might include items for:
 
@@ -112,6 +112,12 @@ Although part of the same tender, the buyer is willing to award these different 
     "lots": [
       {
         "id": "lot-1",
+        "identifiers": [
+          {
+            "id": "PROC/2020/0024-ABC-FGHI-1",
+            "scheme": "internal"
+          }
+        ],
         "title": "Architectural services",
         "description": "For architectural services delivered in the project",
         "status": "active",
@@ -119,13 +125,44 @@ Although part of the same tender, the buyer is willing to award these different 
           "currency": "GBP",
           "amount": 200000
         },
+        "tenderPeriod": {
+          "endDate": "2020-07-30T23:59:59+01:00"
+        },
+        "submissionMethodDetails": "https://www.acme.com/tender-submission/. All missing tenderer-related documents can be submitted later. Economic operators who ...",
+        "enquiryPeriod": {
+          "endDate": "2020-07-15T23:59:59+01:00"
+        },
         "contractPeriod": {
           "startDate": "2020-10-10T00:00:00Z",
           "endDate": "2021-11-10T00:00:00Z"
-        }
+        },
+        "mainProcurementCategory": "services",
+        "additionalProcurementCategories": [
+          "consultingServices"
+        ],
+        "additionalClassifications": [
+          {
+            "id": "serv-a",
+            "scheme": "internal",
+            "description": "Services (Architectural)"
+          }
+        ],
+        "milestones": [
+          {
+            "id": "1",
+            "type": "securityClearanceDeadline",
+            "dueDate": "2020-10-10T00:00:00Z"
+          }
+        ]
       },
       {
         "id": "lot-2",
+        "identifiers": [
+          {
+            "id": "PROC/2020/0024-ABC-FGHI-2",
+            "scheme": "internal"
+          }
+        ],
         "title": "Civil engineering services",
         "description": "For civil engineering services delivered in the project",
         "status": "active",
@@ -133,13 +170,44 @@ Although part of the same tender, the buyer is willing to award these different 
           "currency": "GBP",
           "amount": 400000
         },
+        "mainProcurementCategory": "services",
+        "additionalProcurementCategories": [
+          "consultingServices"
+        ],
+        "tenderPeriod": {
+          "endDate": "2020-07-30T23:59:59+01:00"
+        },
+        "submissionMethodDetails": "https://www.acme.com/tender-submission/. All missing tenderer-related documents can be submitted later. Economic operators who ...",
+        "enquiryPeriod": {
+          "endDate": "2020-07-15T23:59:59+01:00"
+        },
         "contractPeriod": {
           "startDate": "2020-12-10T00:00:00Z",
           "endDate": "2021-12-10T00:00:00Z"
-        }
+        },
+        "additionalClassifications": [
+          {
+            "id": "serv-ce",
+            "scheme": "internal",
+            "description": "Services (Civil engineering)"
+          }
+        ],
+        "milestones": [
+          {
+            "id": "1",
+            "type": "securityClearanceDeadline",
+            "dueDate": "2020-12-10T00:00:00Z"
+          }
+        ]
       },
       {
         "id": "lot-3",
+        "identifiers": [
+          {
+            "id": "PROC/2020/0024-ABC-FGHI-3",
+            "scheme": "internal"
+          }
+        ],
         "title": "Structural engineering",
         "description": "For structural engineering consultancy delivered in the project",
         "status": "active",
@@ -147,15 +215,48 @@ Although part of the same tender, the buyer is willing to award these different 
           "currency": "GBP",
           "amount": 600000
         },
+        "tenderPeriod": {
+          "endDate": "2020-07-30T23:59:59+01:00"
+        },
+        "submissionMethodDetails": "https://www.acme.com/tender-submission/. All missing tenderer-related documents can be submitted later. Economic operators who ...",
+        "enquiryPeriod": {
+          "endDate": "2020-07-15T23:59:59+01:00"
+        },
         "contractPeriod": {
           "startDate": "2021-02-10T00:00:00Z",
           "endDate": "2022-02-10T00:00:00Z"
-        }
+        },
+        "mainProcurementCategory": "services",
+        "additionalProcurementCategories": [
+          "consultingServices"
+        ],
+        "additionalClassifications": [
+          {
+            "id": "serv-se",
+            "scheme": "internal",
+            "description": "Services (Structural engineering)"
+          }
+        ],
+        "milestones": [
+          {
+            "id": "1",
+            "type": "securityClearanceDeadline",
+            "dueDate": "2021-02-10T00:00:00Z"
+          }
+        ]
       }
     ],
     "lotGroups": [
       {
         "id": "lot-group-1",
+        "title": "Civil and structural engineering services",
+        "description": "Civil and structural engineering services for the development of a new public building",
+        "identifiers": [
+          {
+            "id": "PROC/2020/0024-ABC-FGHI-G1",
+            "scheme": "internal"
+          }
+        ],
         "relatedLots": [
           "lot-2",
           "lot-3"
@@ -171,7 +272,16 @@ Although part of the same tender, the buyer is willing to award these different 
       "maximumLotsBidPerSupplier": 4,
       "maximumLotsAwardedPerSupplier": 2,
       "awardCriteriaDetails": "Percentage of people aggregated nationwide contestants undertake to cover, as indicated in their Economic Bids. The evaluation of proposals will be conducted based on the provisions of Article Y of the law on public private partnerships, and the provisions of the tender rules, performing in a first stage an evaluation of the technical bids and subsequently an assessment of the financial offer of the participants."
-    }
+    },
+    "amendments": [
+      {
+        "id": "1",
+        "relatedLots": [
+          "lot-1"
+        ],
+        "description": "Submission deadline extended."
+      }
+    ]
   }
 }
 ```
@@ -184,8 +294,21 @@ Report issues for this extension in the [ocds-extensions repository](https://git
 
 ### Unreleased
 
-* Add `Lot.buyer` field
-* Add `Lot.minValue` field
+* Add fields:
+  * `Amendment.relatedLots`
+  * `Lot.additionalClassifications`
+  * `Lot.buyer`
+  * `Lot.enquiryPeriod`
+  * `Lot.tenderPeriod`
+  * `Lot.identifiers`
+  * `Lot.mainProcurementCategory`
+  * `Lot.additionalProcurementCategories`
+  * `Lot.milestones`
+  * `Lot.minValue`
+  * `Lot.submissionMethodDetails`
+  * `LotGroup.identifiers`
+  * `LotGroup.title`
+  * `LotGroup.description`
 * Make `Lot.id` and `LotGroup.id` required so that lots and lot groups are merged by identifier
 * Move `Bid.relatedLots` to the Bid statistics and details extension
 * Move `Finance.relatedLots` to the Finance extension

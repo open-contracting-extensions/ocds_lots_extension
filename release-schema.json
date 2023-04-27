@@ -154,9 +154,9 @@
           "items": {
             "$ref": "#/definitions/SimpleIdentifier"
           },
+          "minItems": 1,
           "uniqueItems": true,
-          "wholeListMerge": true,
-          "minItems": 1
+          "wholeListMerge": true
         },
         "title": {
           "title": "Title",
@@ -226,9 +226,9 @@
           "items": {
             "$ref": "#/definitions/Classification"
           },
+          "minItems": 1,
           "uniqueItems": true,
-          "wholeListMerge": true,
-          "minItems": 1
+          "wholeListMerge": true
         },
         "mainProcurementCategory": {
           "title": "Main procurement category",
@@ -308,9 +308,9 @@
           "items": {
             "$ref": "#/definitions/SimpleIdentifier"
           },
+          "minItems": 1,
           "uniqueItems": true,
-          "wholeListMerge": true,
-          "minItems": 1
+          "wholeListMerge": true
         },
         "title": {
           "title": "Title",

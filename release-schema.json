@@ -292,7 +292,7 @@
         },
         "identifiers": {
           "title": "Identifiers",
-          "description": "Identifiers for this lot group. This field can be used to provide internal identifiers for the lot group, such as identifiers from a buyer's document management system or procurement planning system.",
+          "description": "Identifiers for this lot group. This field can be used to provide internal identifiers for the lot group, such as identifiers from a buyer's document management system or procurement system.",
           "type": "array",
           "items": {
             "$ref": "#/definitions/SimpleIdentifier"

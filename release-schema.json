@@ -302,11 +302,11 @@
         },
         "title": {
           "title": "Title",
-          "description": "A title for this lot group."
+          "description": "A title for this lot group.",
           "type": [
             "string",
             "null"
-          ],
+          ]
         },
         "description": {
           "title": "Description",

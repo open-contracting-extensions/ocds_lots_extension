@@ -227,7 +227,7 @@
         },
         "mainProcurementCategory": {
           "title": "Main procurement category",
-          "description": "The primary category describing the main object of this lot, from the closed [procurementCategory](https://standard.open-contracting.org/{{version}}/{{lang}}/schema/codelists/#procurement-category) codelist.",
+          "description": "The primary category describing the main object of this lot, from the closed procurementCategory codelist.",
           "type": [
             "string",
             "null"
@@ -243,7 +243,7 @@
         },
         "additionalProcurementCategories": {
           "title": "Additional procurement categories",
-          "description": "Any additional categories describing the objects of this lot, using the open [extendedProcurementCategory](https://standard.open-contracting.org/{{version}}/{{lang}}/schema/codelists/#extended-procurement-category) codelist.",
+          "description": "Any additional categories describing the objects of this lot, using the open extendedProcurementCategory codelist.",
           "type": [
             "array",
             "null"

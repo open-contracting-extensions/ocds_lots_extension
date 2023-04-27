@@ -2,20 +2,6 @@
 
 A lot is a grouping of items within a contracting process that can be bid on or awarded together. This extension adds the concept of a lot to OCDS.
 
-## Legal context
-
-In the European Union, this extension's fields correspond to the following [eForms business groups](https://docs.ted.europa.eu/eforms/latest/reference/business-terms/):
-
-* BG-2 (Purpose)
-* BT-13 (Additional Information Deadline) in BG-101 (Procurement Documents)
-* BG-102 (Submission Terms)
-* BG-705 (Other Requirements)
-* BG-710 (Additional Information)
-* BG-713 (Strategic Procurement)
-* BG-7141 (CVD Vehicles)
-
-See [OCDS for eForms](https://standard.open-contracting.org/profiles/eforms/latest/en/) for the correspondences to eForms fields.
-
 ## Usage
 
 If a contracting process is divided into lots, then you should add each lot to the `tender.lots` array.

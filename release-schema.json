@@ -126,8 +126,11 @@
           "items": {
             "type": [
               "string"
-            ]
-          }
+            ],
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
         }
       }
     },
@@ -152,7 +155,8 @@
             "$ref": "#/definitions/SimpleIdentifier"
           },
           "uniqueItems": true,
-          "wholeListMerge": true
+          "wholeListMerge": true,
+          "minItems": 1
         },
         "title": {
           "title": "Title",
@@ -223,7 +227,8 @@
             "$ref": "#/definitions/Classification"
           },
           "uniqueItems": true,
-          "wholeListMerge": true
+          "wholeListMerge": true,
+          "minItems": 1
         },
         "mainProcurementCategory": {
           "title": "Main procurement category",
@@ -249,10 +254,13 @@
             "null"
           ],
           "items": {
-            "type": "string"
+            "type": "string",
+            "minLength": 1
           },
           "codelist": "extendedProcurementCategory.csv",
-          "openCodelist": true
+          "openCodelist": true,
+          "minItems": 1,
+          "uniqueItems": true
         },
         "enquiryPeriod": {
           "title": "Enquiry period",
@@ -265,7 +273,9 @@
           "type": "array",
           "items": {
             "$ref": "#/definitions/Milestone"
-          }
+          },
+          "minItems": 1,
+          "uniqueItems": true
         },
         "submissionMethodDetails": {
           "title": "Submission method details",
@@ -273,7 +283,8 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         }
       }
     },
@@ -298,7 +309,8 @@
             "$ref": "#/definitions/SimpleIdentifier"
           },
           "uniqueItems": true,
-          "wholeListMerge": true
+          "wholeListMerge": true,
+          "minItems": 1
         },
         "title": {
           "title": "Title",
@@ -306,7 +318,8 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         },
         "description": {
           "title": "Description",
@@ -314,7 +327,8 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         },
         "relatedLots": {
           "title": "Related lot(s)",

@@ -146,7 +146,7 @@
         },
         "identifiers": {
           "title": "Identifiers",
-          "description": "Identifiers for this lot. This field can be used to provide internal identifiers for the lot, such as identifiers from a buyer's document management system or procurement planning system.",
+          "description": "Identifiers for this lot. This field can be used to provide internal identifiers for the lot, such as identifiers from a buyer's document management system or procurement system.",
           "type": "array",
           "items": {
             "$ref": "#/definitions/SimpleIdentifier"
@@ -217,7 +217,7 @@
         },
         "additionalClassifications": {
           "title": "Additional classifications",
-          "description": "An array of additional classifications for this lot.",
+          "description": "Additional classifications for this lot.",
           "type": "array",
           "items": {
             "$ref": "#/definitions/Classification"
@@ -256,12 +256,12 @@
         },
         "enquiryPeriod": {
           "title": "Enquiry period",
-          "description": "The period during which potential bidders may submit questions and requests for clarification about this lot to the buyer or the procuring entity. Details of how to submit enquiries should be provided in attached notices, or in submissionMethodDetails. Structured dates for when responses to questions will be made can be provided using milestones.",
+          "description": "The period during which potential bidders may submit questions and requests for clarification about this lot to the buyer or the procuring entity.",
           "$ref": "#/definitions/Period"
         },
         "milestones": {
           "title": "Milestones",
-          "description": "A list of milestones associated with this lot.",
+          "description": "Milestones associated with this lot.",
           "type": "array",
           "items": {
             "$ref": "#/definitions/Milestone"
@@ -302,11 +302,11 @@
         },
         "title": {
           "title": "Title",
+          "description": "A title for this lot group."
           "type": [
             "string",
             "null"
           ],
-          "description": "A title for this lot group."
         },
         "description": {
           "title": "Description",

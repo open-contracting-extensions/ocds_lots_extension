@@ -224,7 +224,7 @@
         },
         "mainProcurementCategory": {
           "title": "Main procurement category",
-          "description": "The primary category describing the main object of this lot, from the closed procurementCategory codelist.",
+          "description": "The primary category describing the main object of this lot, using the closed procurementCategory codelist.",
           "type": [
             "string",
             "null"

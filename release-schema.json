@@ -61,9 +61,7 @@
             "null"
           ],
           "items": {
-            "type": [
-              "string"
-            ]
+            "type": "string"
           }
         }
       }
@@ -90,9 +88,7 @@
             "null"
           ],
           "items": {
-            "type": [
-              "string"
-            ]
+            "type": "string"
           }
         }
       }
@@ -107,9 +103,7 @@
             "null"
           ],
           "items": {
-            "type": [
-              "string"
-            ]
+            "type": "string"
           }
         }
       }
@@ -124,9 +118,7 @@
             "null"
           ],
           "items": {
-            "type": [
-              "string"
-            ],
+            "type": "string",
             "minLength": 1
           },
           "minItems": 1,
@@ -338,9 +330,7 @@
             "null"
           ],
           "items": {
-            "type": [
-              "string"
-            ]
+            "type": "string"
           }
         },
         "optionToCombine": {

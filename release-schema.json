@@ -121,8 +121,8 @@
             "type": "string",
             "minLength": 1
           },
-          "minItems": 1,
-          "uniqueItems": true
+          "uniqueItems": true,
+          "minItems": 1
         }
       }
     },
@@ -146,9 +146,9 @@
           "items": {
             "$ref": "#/definitions/SimpleIdentifier"
           },
-          "minItems": 1,
+          "wholeListMerge": true,
           "uniqueItems": true,
-          "wholeListMerge": true
+          "minItems": 1
         },
         "title": {
           "title": "Title",
@@ -218,9 +218,9 @@
           "items": {
             "$ref": "#/definitions/Classification"
           },
-          "minItems": 1,
+          "wholeListMerge": true,
           "uniqueItems": true,
-          "wholeListMerge": true
+          "minItems": 1
         },
         "mainProcurementCategory": {
           "title": "Main procurement category",
@@ -251,8 +251,8 @@
           },
           "codelist": "extendedProcurementCategory.csv",
           "openCodelist": true,
-          "minItems": 1,
-          "uniqueItems": true
+          "uniqueItems": true,
+          "minItems": 1
         },
         "enquiryPeriod": {
           "title": "Enquiry period",
@@ -266,8 +266,8 @@
           "items": {
             "$ref": "#/definitions/Milestone"
           },
-          "minItems": 1,
-          "uniqueItems": true
+          "uniqueItems": true,
+          "minItems": 1
         },
         "submissionMethodDetails": {
           "title": "Submission method details",
@@ -300,9 +300,9 @@
           "items": {
             "$ref": "#/definitions/SimpleIdentifier"
           },
-          "minItems": 1,
+          "wholeListMerge": true,
           "uniqueItems": true,
-          "wholeListMerge": true
+          "minItems": 1
         },
         "title": {
           "title": "Title",

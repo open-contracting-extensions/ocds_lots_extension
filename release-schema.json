@@ -136,8 +136,8 @@
       "properties": {
         "id": {
           "title": "Lot ID",
-          "type": "string",
-          "description": "A local identifier for this lot, such as a lot number. This is used in relatedLots references at the item, document and award level."
+          "description": "A local identifier for this lot, such as a lot number. This is used in relatedLots references at the item, document and award level.",
+          "type": "string"
         },
         "identifiers": {
           "title": "Identifiers",
@@ -152,11 +152,11 @@
         },
         "title": {
           "title": "Title",
+          "description": "A title for this lot.",
           "type": [
             "string",
             "null"
-          ],
-          "description": "A title for this lot."
+          ]
         },
         "description": {
           "title": "Description",
@@ -188,8 +188,8 @@
         },
         "value": {
           "title": "Lot value",
-          "$ref": "#/definitions/Value",
-          "description": "The maximum estimated value of this lot."
+          "description": "The maximum estimated value of this lot.",
+          "$ref": "#/definitions/Value"
         },
         "minValue": {
           "title": "Minimum value",
@@ -290,8 +290,8 @@
       "properties": {
         "id": {
           "title": "Lot group identifier",
-          "type": "string",
-          "description": "A local identifier for this group of lots."
+          "description": "A local identifier for this group of lots.",
+          "type": "string"
         },
         "identifiers": {
           "title": "Identifiers",

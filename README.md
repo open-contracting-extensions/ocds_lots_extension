@@ -2,7 +2,7 @@
 
 A lot is a grouping of items within a contracting process that can be bid on or awarded together. This extension adds the concept of a lot to OCDS.
 
-## Usage
+## Guidance
 
 If a contracting process is divided into lots, then you should add each lot to the `tender.lots` array.
 

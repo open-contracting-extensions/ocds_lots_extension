@@ -126,6 +126,24 @@
         }
       }
     },
+    "RelatedProcess": {
+      "properties": {
+        "relatedLots": {
+          "title": "Related lot(s)",
+          "description": "The identifiers of the lots to which this related process relates.",
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true,
+          "minItems": 1
+        }
+      }
+    },
     "Lot": {
       "title": "Lots",
       "description": "A lot is a grouping of items within a tender that can be bid on or awarded together.",

@@ -30,7 +30,7 @@ An array of `relatedLots` (plural) can be provided for each of:
 
 In other extensions, the following objects can also declare related lots:
 
-* bids submitted by tenderers (`Bid`), in the [bid extension](https://github.com/open-contracting-extensions/ocds_bid_extension)
+* bids submitted by tenderers, in the [bid extension](https://github.com/open-contracting-extensions/ocds_bid_extension)
 * sources of finance (`Finance`), in the [finance extension](https://github.com/open-contracting-extensions/ocds_finance_extension)
 
 When lots are used, **all** items should have a `relatedLot` field.
@@ -309,6 +309,7 @@ Report issues for this extension in the [ocds-extensions repository](https://git
   * `LotGroup.identifiers`
   * `LotGroup.title`
   * `LotGroup.description`
+  * `RelatedProcess.relatedLots`
 * Make `Lot.id` and `LotGroup.id` required so that lots and lot groups are merged by identifier
 * Move `Bid.relatedLots` to the Bid statistics and details extension
 * Move `Finance.relatedLots` to the Finance extension

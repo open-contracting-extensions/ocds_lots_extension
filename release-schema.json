@@ -130,7 +130,7 @@
       "properties": {
         "relatedLots": {
           "title": "Related lot(s)",
-          "description": "The identifiers of the lots to which this related process relates.",
+          "description": "The identifiers of the lots in the related process to which this process relates.",
           "type": [
             "array",
             "null"

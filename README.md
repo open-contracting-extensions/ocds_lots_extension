@@ -129,6 +129,9 @@ Although part of the same tender, the buyer is willing to award these different 
           "endDate": "2020-07-30T23:59:59+01:00"
         },
         "submissionMethodDetails": "https://www.acme.com/tender-submission/. All missing tenderer-related documents can be submitted later. Economic operators who ...",
+        "submissionTerms": {
+          "electronicSubmissionPolicy": "required",
+        },
         "enquiryPeriod": {
           "endDate": "2020-07-15T23:59:59+01:00"
         },
@@ -178,6 +181,9 @@ Although part of the same tender, the buyer is willing to award these different 
           "endDate": "2020-07-30T23:59:59+01:00"
         },
         "submissionMethodDetails": "https://www.acme.com/tender-submission/. All missing tenderer-related documents can be submitted later. Economic operators who ...",
+        "submissionTerms": {
+          "electronicSubmissionPolicy": "required",
+        },
         "enquiryPeriod": {
           "endDate": "2020-07-15T23:59:59+01:00"
         },
@@ -219,6 +225,9 @@ Although part of the same tender, the buyer is willing to award these different 
           "endDate": "2020-07-30T23:59:59+01:00"
         },
         "submissionMethodDetails": "https://www.acme.com/tender-submission/. All missing tenderer-related documents can be submitted later. Economic operators who ...",
+        "submissionTerms": {
+          "electronicSubmissionPolicy": "required",
+        },
         "enquiryPeriod": {
           "endDate": "2020-07-15T23:59:59+01:00"
         },
@@ -310,6 +319,7 @@ Report issues for this extension in the [ocds-extensions repository](https://git
   * `LotGroup.title`
   * `LotGroup.description`
   * `RelatedProcess.relatedLots`
+  * `Lot.submissionTerms`
 * Make `Lot.id` and `LotGroup.id` required so that lots and lot groups are merged by identifier
 * Move `Bid.relatedLots` to the Bid statistics and details extension
 * Move `Finance.relatedLots` to the Finance extension

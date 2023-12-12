@@ -295,6 +295,11 @@
             "null"
           ],
           "minLength": 1
+        },
+        "submissionTerms": {
+          "title": "Submission terms",
+          "description": "Information about how, when and where tenderers need to submit their bids.",
+          "$ref": "#/definitions/submissionTerms"
         }
       }
     },

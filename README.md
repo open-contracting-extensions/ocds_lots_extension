@@ -130,6 +130,9 @@ Although part of the same tender, the buyer is willing to award these different 
           "endDate": "2020-07-30T23:59:59+01:00"
         },
         "submissionMethodDetails": "https://www.acme.com/tender-submission/. All missing tenderer-related documents can be submitted later. Economic operators who ...",
+        "submissionTerms": {
+          "electronicSubmissionPolicy": "required"
+        },
         "enquiryPeriod": {
           "endDate": "2020-07-15T23:59:59+01:00"
         },
@@ -179,6 +182,9 @@ Although part of the same tender, the buyer is willing to award these different 
           "endDate": "2020-07-30T23:59:59+01:00"
         },
         "submissionMethodDetails": "https://www.acme.com/tender-submission/. All missing tenderer-related documents can be submitted later. Economic operators who ...",
+        "submissionTerms": {
+          "electronicSubmissionPolicy": "required"
+        },
         "enquiryPeriod": {
           "endDate": "2020-07-15T23:59:59+01:00"
         },
@@ -220,6 +226,9 @@ Although part of the same tender, the buyer is willing to award these different 
           "endDate": "2020-07-30T23:59:59+01:00"
         },
         "submissionMethodDetails": "https://www.acme.com/tender-submission/. All missing tenderer-related documents can be submitted later. Economic operators who ...",
+        "submissionTerms": {
+          "electronicSubmissionPolicy": "required"
+        },
         "enquiryPeriod": {
           "endDate": "2020-07-15T23:59:59+01:00"
         },
@@ -307,6 +316,7 @@ Report issues for this extension in the [ocds-extensions repository](https://git
   * `Lot.milestones`
   * `Lot.minValue`
   * `Lot.submissionMethodDetails`
+  * `Lot.submissionTerms`
   * `LotGroup.identifiers`
   * `LotGroup.title`
   * `LotGroup.description`

@@ -130,7 +130,7 @@ Although part of the same tender, the buyer is willing to award these different 
         },
         "submissionMethodDetails": "https://www.acme.com/tender-submission/. All missing tenderer-related documents can be submitted later. Economic operators who ...",
         "submissionTerms": {
-          "electronicSubmissionPolicy": "required",
+          "electronicSubmissionPolicy": "required"
         },
         "enquiryPeriod": {
           "endDate": "2020-07-15T23:59:59+01:00"
@@ -182,7 +182,7 @@ Although part of the same tender, the buyer is willing to award these different 
         },
         "submissionMethodDetails": "https://www.acme.com/tender-submission/. All missing tenderer-related documents can be submitted later. Economic operators who ...",
         "submissionTerms": {
-          "electronicSubmissionPolicy": "required",
+          "electronicSubmissionPolicy": "required"
         },
         "enquiryPeriod": {
           "endDate": "2020-07-15T23:59:59+01:00"
@@ -226,7 +226,7 @@ Although part of the same tender, the buyer is willing to award these different 
         },
         "submissionMethodDetails": "https://www.acme.com/tender-submission/. All missing tenderer-related documents can be submitted later. Economic operators who ...",
         "submissionTerms": {
-          "electronicSubmissionPolicy": "required",
+          "electronicSubmissionPolicy": "required"
         },
         "enquiryPeriod": {
           "endDate": "2020-07-15T23:59:59+01:00"

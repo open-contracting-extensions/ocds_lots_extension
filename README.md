@@ -27,6 +27,7 @@ An array of `relatedLots` (plural) can be provided for each of:
 * documents
 * milestones
 * awards
+* relatedProcesses
 
 In other extensions, the following objects can also declare related lots:
 

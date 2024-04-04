@@ -40,15 +40,15 @@ Documents and milestones may have a `relatedLots` field. Those without this fiel
 
 The items within an award should have a `relatedLot` field. Publishers may also reference all the lots an award relates to at the award level using `relatedLots`.
 
-## How to set `tender.status` if lots' statuses differ?
+## How to set `tender.finalStatus` if lots' final statuses differ?
 
-`tender.status` and `tender.lots.status` use the closed tenderStatus.csv codelist. This codelist progresses from planning statuses ('planning', 'planned'), to 'active' status, and then result statuses ('complete', 'cancelled', 'unsuccessful').
+`tender.finalStatus` and `tender.lots.finalStatus` use the closed tenderFinalStatus.csv codelist. This codelist covers the possible end result statuses ('complete', 'cancelled', 'unsuccessful'). The statuses of the tender and its lots' prior to the end result can be inferred from the relevant date fields.
 
-* If any lot's status is 'active', then `tender.status` should be 'active', to indicate that some lots are awaiting results.
-* If all lots' status are a result status, then `tender.status` describes the aggregate result:
-  * If at least one lot's status is 'complete', then `tender.status` should be 'complete', to indicate that there is at least one award.
-  * Otherwise, if at least one lot's status is 'unsuccessful', then `tender.status` should be 'unsuccessful', to indicate that the procedure was completed but unsuccessfully.
-  * Otherwise, If all lots' status are 'cancelled', then `tender.status` should be 'cancelled', to indicate that the procedure was discontinued as a whole.
+* If any lot does not yet have a final status, then `tender.finalStatus` should not be set, to indicate that some lots are awaiting results.
+* If all lots' have a final status, then `tender.finalStatus` describes the aggregate result:
+  * If at least one lot's final status is 'complete', then `tender.finalStatus` should be 'complete', to indicate that there is at least one award.
+  * Otherwise, if at least one lot's final status is 'unsuccessful', then `tender.finalStatus` should be 'unsuccessful', to indicate that the procedure was completed but unsuccessfully.
+  * Otherwise, If all lots' final status are 'cancelled', then `tender.finalStatus` should be 'cancelled', to indicate that the procedure was discontinued as a whole.
 
 ## Examples
 
@@ -121,7 +121,6 @@ Although part of the same tender, the buyer is willing to award these different 
         ],
         "title": "Architectural services",
         "description": "For architectural services delivered in the project",
-        "status": "active",
         "value": {
           "currency": "GBP",
           "amount": 200000
@@ -169,7 +168,6 @@ Although part of the same tender, the buyer is willing to award these different 
         ],
         "title": "Civil engineering services",
         "description": "For civil engineering services delivered in the project",
-        "status": "active",
         "value": {
           "currency": "GBP",
           "amount": 400000
@@ -217,7 +215,6 @@ Although part of the same tender, the buyer is willing to award these different 
         ],
         "title": "Structural engineering",
         "description": "For structural engineering consultancy delivered in the project",
-        "status": "active",
         "value": {
           "currency": "GBP",
           "amount": 600000
@@ -301,6 +298,13 @@ Although part of the same tender, the buyer is willing to award these different 
 Report issues for this extension in the [ocds-extensions repository](https://github.com/open-contracting/ocds-extensions/issues), putting the extension's name in the issue's title.
 
 ## Changelog
+
+### v1.2
+
+* Add fields:
+  * `Lot.finalStatus`
+  * `Lot.finalStatusDetails`
+* Deprecate `Lot.status`
 
 ### Unreleased
 

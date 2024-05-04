@@ -8,7 +8,7 @@ If a contracting process is divided into lots, then you should add each lot to t
 
 If a contracting process is not divided into lots, then you should nonetheless add a single, virtual lot. If a data element can be mapped to either a `tender` field or a `tender.lots` field, you should map it to the `tender.lots` field. In this way, information is accessible at the same location for all contracting processes, regardless of whether the process is actually divided into lots.
 
-## Modelling
+## Modeling
 
 The lots extension maintains the overall structure of an OCDS release, with items, documents and milestones nested immediately within `tender`, `awards` and `contracts` sections, but it introduces an array of Lots in the `tender` section, and the ability to cross-reference a specific `relatedLot` for each item, and an array of `relatedLots` for documents, milestones and awards.
 
@@ -40,12 +40,12 @@ Documents and milestones may have a `relatedLots` field. Those without this fiel
 
 The items within an award should have a `relatedLot` field. Publishers may also reference all the lots an award relates to at the award level using `relatedLots`.
 
-## How to set `tender.finalStatus` if lots' final statuses differ?
+## How to set the `tender.finalStatus` field if the lots' final statuses differ?
 
-`tender.finalStatus` and `tender.lots.finalStatus` use the closed tenderFinalStatus.csv codelist. This codelist covers the possible end result statuses ('complete', 'cancelled', 'unsuccessful'). The statuses of the tender and its lots' prior to the end result can be inferred from the relevant date fields.
+The `tender.finalStatus` and `tender.lots.finalStatus` fields use the closed `tenderFinalStatus.csv` codelist. This codelist covers the possible end result statuses ('complete', 'cancelled', 'unsuccessful').  Prior to reaching a result, the statuses of the tender and its lots can be inferred from the relevant date fields.
 
-* If any lot does not yet have a final status, then `tender.finalStatus` should not be set, to indicate that some lots are awaiting results.
-* If all lots' have a final status, then `tender.finalStatus` describes the aggregate result:
+* If any lot has no final status, then `tender.finalStatus` should not be set, to indicate that some lots are awaiting results.
+* If all lots have a final status, then `tender.finalStatus` describes the aggregate result:
   * If at least one lot's final status is 'complete', then `tender.finalStatus` should be 'complete', to indicate that there is at least one award.
   * Otherwise, if at least one lot's final status is 'unsuccessful', then `tender.finalStatus` should be 'unsuccessful', to indicate that the procedure was completed but unsuccessfully.
   * Otherwise, If all lots' final status are 'cancelled', then `tender.finalStatus` should be 'cancelled', to indicate that the procedure was discontinued as a whole.

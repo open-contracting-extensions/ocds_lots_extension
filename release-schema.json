@@ -202,6 +202,34 @@
             "complete",
             "withdrawn",
             null
+          ],
+          "deprecated": {
+            "description": "This field is deprecated, because the same information can be provided by filling in the relevant date fields.",
+            "deprecatedVersion": "1.2"
+          }
+        },
+        "finalStatus": {
+          "title": "Final status",
+          "description": "The final status of the lot, using the closed [tenderFinalStatus](https://standard.open-contracting.org/{{version}}/{{lang}}/schema/codelists/#tender-final-status) codelist.",
+          "type": [
+            "string",
+            "null"
+          ],
+          "codelist": "tenderFinalStatus.csv",
+          "openCodelist": false,
+          "enum": [
+            "complete",
+            "cancelled",
+            "unsuccessful",
+            null
+          ]
+        },
+        "finalStatusDetails": {
+          "title": "Final status details",
+          "description": "Additional details on the final status of the lot. This field can be used to provide the local name of the final status.",
+          "type": [
+            "string",
+            "null"
           ]
         },
         "value": {

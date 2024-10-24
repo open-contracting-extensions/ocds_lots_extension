@@ -15,26 +15,26 @@
           "description": "Details of any criteria that apply to bidding on the lots in this tender.",
           "type": "object",
           "properties": {
-            "maximumLotsBidPerSupplier": {
-              "title": "Maximum lots per supplier",
-              "description": "The maximum number of lots that one supplier can bid on as part of this contracting process.",
-              "oneOf": [
-                {
-                  "type": [
-                    "integer",
-                    "null"
-                  ]
-                },
-                {
-                  "type": [
-                    "number"
-                  ],
-                  "enum": [
-                    1e9999
-                  ]
-                }
-              ]
-            },
+          "maximumLotsBidPerSupplier": {
+            "title": "Maximum lots per supplier",
+            "description": "The maximum number of lots that one supplier can bid on as part of this contracting process.",
+            "anyOf": [
+              {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              {
+                "type": [
+                  "number"
+                ],
+                "enum": [
+                  1e9999
+                ]
+              }
+            ]
+          },
             "maximumLotsAwardedPerSupplier": {
               "title": "Maximum lots per supplier",
               "description": "The maximum number of lots that can be awarded to one supplier as part of this contracting process.",

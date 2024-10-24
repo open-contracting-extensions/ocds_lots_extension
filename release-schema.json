@@ -18,9 +18,19 @@
             "maximumLotsBidPerSupplier": {
               "title": "Maximum lots per supplier",
               "description": "The maximum number of lots that one supplier can bid on as part of this contracting process.",
-              "type": [
-                "integer",
-                "null"
+              "oneOf": [
+                {
+                  "type": [
+                    "integer",
+                    "null"
+                  ]
+                },
+                {
+                  "type": [
+                    "number"
+                  ],
+                  "const": 1e9999
+                }
               ]
             },
             "maximumLotsAwardedPerSupplier": {

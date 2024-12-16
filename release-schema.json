@@ -209,7 +209,7 @@
           "description": "The maximum estimated value of this lot.",
           "$ref": "#/definitions/Value"
         },
-        "minValue": {
+        "minimumValue": {
           "title": "Minimum value",
           "description": "The estimated minimum value of the lot. A negative value indicates that the contracting process may involve payments from the supplier to the buyer (commonly used in concession contracts).",
           "$ref": "#/definitions/Value"

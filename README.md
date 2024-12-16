@@ -314,7 +314,7 @@ Report issues for this extension in the [ocds-extensions repository](https://git
   * `Lot.mainProcurementCategory`
   * `Lot.additionalProcurementCategories`
   * `Lot.milestones`
-  * `Lot.minValue`
+  * `Lot.minimumValue`
   * `Lot.submissionMethodDetails`
   * `Lot.submissionTerms`
   * `LotGroup.identifiers`
